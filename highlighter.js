@@ -9,6 +9,10 @@ String.prototype.highlighter = function () {
 };
 (function ($) {
     $.fn.highlighter = function () {
-        return this;
+//        return this;
+        var content = this.text();
+        var dataArray = content.split();
+
+        element.name = element.name.replace(new RegExp("(?![^&;]+;)(?!<[^<>]*)(" + that.params.searchString + ")(?![^<>]*>)(?![^&;]+;)", "gi"), "<span>$1</span>");
     };
 })(jQuery);
