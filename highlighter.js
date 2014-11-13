@@ -24,8 +24,7 @@ String.prototype.highlighter = function () {
                     , 3000);
             }
             textLength--;
-        }
-        return this;
-//        element.name = element.name.replace(new RegExp("(?![^&;]+;)(?!<[^<>]*)(" + that.params.searchString + ")(?![^<>]*>)(?![^&;]+;)", "gi"), "<span>$1</span>");
+        };
+        //return this;
     };
 })(jQuery);
